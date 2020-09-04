@@ -1,0 +1,9 @@
+# ninja log v5
+10	125	6207541774742914	MyExperiment/CMakeFiles/MyExperiment.dir/src/MyExperiment.cpp.obj	bf79e71ce395fc77
+6	152	6207541775043712	MyDLL/CMakeFiles/MyDLL.dir/src/MyDLL.cpp.obj	235409db032c2e71
+1	342	6207541776928737	MyStaticLib/CMakeFiles/MyStaticLib.dir/src/libMyStaticLib.cpp.obj	595a8d32173feeca
+14	350	6207541777018973	MyExperiment/CMakeFiles/MyExperiment.dir/src/main.cpp.obj	55f51ea4d72cc18e
+350	649	6207541778497897	MyExperiment/MyExperiment.exe	7de01d3c7eaf339a
+153	658	6207541776282021	MyDLL/libMyDLL.dll	393933d5cf9987e9
+153	658	6207541776282021	MyDLL/libMyDLL.dll.a	393933d5cf9987e9
+343	774	6207541778838817	MyStaticLib/libMyStaticLib.a	13cbfdb052dbfc28

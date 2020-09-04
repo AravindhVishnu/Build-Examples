@@ -1,0 +1,80 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "cmake build",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-G",
+        "Ninja",
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-B./build",
+        "-S."
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "--build",
+        "./build"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": {
+        "base": "$gcc"
+      }
+    },
+    {
+      "label": "BuildAll",
+      "type": "shell",
+      "dependsOn": [
+        "cmake build",
+        "Build"
+      ],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    },
+    {
+      "label": "cmake clean",
+      "type": "shell",
+      "command": "rm",
+      "args": [
+        "-rf",
+        "./build"
+      ],
+      "problemMatcher": {
+        "base": "$gcc"
+      }
+    },
+    {
+      "label": "Clean",
+      "type": "shell",
+      "command": "rm",
+      "args": [
+        "-rf",
+        "./bin/*"
+      ],
+      "problemMatcher": {
+        "base": "$gcc"
+      }
+    },
+    {
+      "label": "Clean All",
+      "type": "shell",
+      "dependsOn": [
+        "cmake clean",
+        "Clean"
+      ],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    }
+  ]
+}

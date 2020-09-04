@@ -1,0 +1,11 @@
+C:/Data/my_workspaces/MyExampleProgram/build/CMakeFiles/edit_cache.dir
+C:/Data/my_workspaces/MyExampleProgram/build/CMakeFiles/rebuild_cache.dir
+C:/Data/my_workspaces/MyExampleProgram/build/MyStaticLib/CMakeFiles/edit_cache.dir
+C:/Data/my_workspaces/MyExampleProgram/build/MyStaticLib/CMakeFiles/MyStaticLib.dir
+C:/Data/my_workspaces/MyExampleProgram/build/MyStaticLib/CMakeFiles/rebuild_cache.dir
+C:/Data/my_workspaces/MyExampleProgram/build/MyDLL/CMakeFiles/rebuild_cache.dir
+C:/Data/my_workspaces/MyExampleProgram/build/MyDLL/CMakeFiles/MyDLL.dir
+C:/Data/my_workspaces/MyExampleProgram/build/MyDLL/CMakeFiles/edit_cache.dir
+C:/Data/my_workspaces/MyExampleProgram/build/MyExperiment/CMakeFiles/edit_cache.dir
+C:/Data/my_workspaces/MyExampleProgram/build/MyExperiment/CMakeFiles/MyExperiment.dir
+C:/Data/my_workspaces/MyExampleProgram/build/MyExperiment/CMakeFiles/rebuild_cache.dir

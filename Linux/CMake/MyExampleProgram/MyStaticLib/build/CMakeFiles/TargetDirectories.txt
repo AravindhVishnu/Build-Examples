@@ -1,0 +1,3 @@
+C:/Data/my_workspaces/MyExampleProgram/MyStaticLib/build/CMakeFiles/edit_cache.dir
+C:/Data/my_workspaces/MyExampleProgram/MyStaticLib/build/CMakeFiles/MyStaticLib.dir
+C:/Data/my_workspaces/MyExampleProgram/MyStaticLib/build/CMakeFiles/rebuild_cache.dir

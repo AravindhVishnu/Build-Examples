@@ -1,0 +1,102 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "cmake build",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "-G",
+        "Ninja",
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-B./build",
+        "-S."
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "cmake",
+      "args": [
+        "--build",
+        "./build"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": {
+        "base": "$gcc"
+    }  
+    },
+    {
+      "label": "Build All",
+      "type": "shell",
+      "dependsOn": [
+        "cmake build",
+        "Build"
+      ],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    },
+    {
+      "label": "cmake clean",
+      "type": "shell",
+      "command": "rm",
+      "args": [
+        "-r",
+        "-Force",
+        "./build"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean MyStaticLib",
+      "type": "shell",
+      "command": "rm",
+      "args": [
+        "-r",
+        "-Force",
+        "./MyStaticLib/bin/*"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean MyDLL",
+      "type": "shell",
+      "command": "rm",
+      "args": [
+        "-r",
+        "-Force",
+        "./MyDLL/bin/*"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean MyExperiment",
+      "type": "shell",
+      "command": "rm",
+      "args": [
+        "-r",
+        "-Force",
+        "./MyExperiment/bin/*"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean All",
+      "type": "shell",
+      "dependsOn": [
+        "cmake clean",
+        "Clean MyStaticLib",
+        "Clean MyDLL",
+        "Clean MyExperiment"
+      ],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    }
+  ]
+}
