@@ -9,7 +9,7 @@ Tools:
 The main project (MyExampleProgram) includes the following subprojects:
 - MyStaticLib: Simple static library example.
 - MyDLL: Simple shared library example.
-- MyExperiment: Client that uses the static- and shared library in a simple way.
+- MyExperiment: Simple client that uses the static- and shared library in a simple way.
 
 Configurations:
 - Install CMake https://cmake.org/download/
@@ -18,7 +18,7 @@ Configurations:
 - Install GnuWin32 (only for Windows) http://gnuwin32.sourceforge.net/
 - Install mingw64 (only for Windows) http://mingw-w64.org/doku.php/download/mingw-builds
 
-In Windows, configure the PATH environment variable to include the following folder paths:
+In Windows, configure the PATH environment variable to include the following paths:
 - C:\GnuWin32\bin
 - C:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin
 - C:\Program Files\CMake\bin
