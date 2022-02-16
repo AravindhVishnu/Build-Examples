@@ -1,8 +1,8 @@
 # Build-Examples
 Simple project build examples using GNU Make and CMake/Ninja for Linux and Windows.
 
-This build example project can be used as a starting point when developing medium/large 
-projects containing an application and several static- and shared libraries.
+This build example project can be used as a starting point when developing small/medium 
+sized projects containing an application and several static- and shared libraries.
 
 Tools:
 - Visual Studio Code is used as editor.
