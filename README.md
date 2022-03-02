@@ -26,3 +26,5 @@ In Windows, configure the PATH environment variable to include the following pat
 - C:\Program Files\mingw-w64\x86_64-8.1.0-win32-seh-rt_v6-rev0\mingw64\bin
 - C:\Program Files\CMake\bin
 - C:\ninja
+
+Note: Tested on Windows 10 and Linux Mint
